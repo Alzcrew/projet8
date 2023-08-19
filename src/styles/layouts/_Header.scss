@@ -1,0 +1,33 @@
+// _Header.scss
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    background-color: #fff;
+  
+    .header-logo img {
+      height: 68px;
+      margin-left: 100px;
+      margin-top: 45px;
+    }
+  
+    .header-nav ul {
+      list-style: none;
+      display: flex;
+  
+      li {
+        margin-right: 50px;
+        margin-top: 45px;
+        a {
+          text-decoration: none;
+          color: #ff5722;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  

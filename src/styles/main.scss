@@ -1,0 +1,17 @@
+// main.scss
+
+// Base styles
+@import './base/reset';
+@import './base/typography';
+
+// Layout styles
+@import './layouts/Cards';
+@import './layouts/Footer';
+@import './layouts/Header';
+@import './layouts/Banner';
+
+// Page styles
+@import './pages/About';
+@import './pages/Error';
+@import './pages/Home';
+@import './pages/Logements';
