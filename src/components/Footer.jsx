@@ -1,11 +1,16 @@
-import React from "react";
+import React from 'react';
+import logo from '../assets/logo-footer.png'; // Importez le chemin vers votre logo
+import '../styles/layouts/_Footer.scss'; // Importez le fichier CSS pour les styles du footer
 
-function Footer() {
-  return (
-    <footer>
-      <p>&copy; 2023 Your Company. All rights reserved.</p>
-    </footer>
-  );
+const Footer = () => {
+    return (
+        <footer className="footer">
+            <img className="footer-logo" src={logo} alt="Kasa Logo" />
+            <div className="footer-text">
+                <p>&copy; {new Date().getFullYear()} Kasa. All rights reserved.</p>
+            </div>
+        </footer>
+    );
 }
 
 export default Footer;

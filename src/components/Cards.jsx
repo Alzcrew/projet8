@@ -1,17 +1,22 @@
-import React from "react";
+import React, { Component } from 'react';
+import '../styles/layouts/_Cards.scss'; // Importez le fichier CSS pour les styles
+import data from './data.json'; // Importez le fichier JSON (assurez-vous que le chemin est correct)
 
-function Cards() {
-  return (
-    <div>
-      <h2>Featured Listings</h2>
-      <div className="card">
-        <img src="property-image.jpg" alt="Property" />
-        <h3>Spacious Apartment</h3>
-        <p>Beautiful apartment with modern amenities.</p>
-      </div>
-      {/* More cards */}
-    </div>
-  );
+class Cards extends Component {
+    render() {
+        return (
+            <div className="cards-container">
+                {data.map((location, index) => (
+                    <div key={index} className="card">
+                        <div className="card-image" style={{ backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(${location.cover})` }}>
+                            <h2 className="location-title">{location.title}</h2>
+                        </div>
+                        
+                    </div>
+                ))}
+            </div>
+        );
+    }
 }
 
 export default Cards;

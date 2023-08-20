@@ -1,7 +1,6 @@
-// Header.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo-desktop.svg"; // Assurez-vous de placer votre logo dans le dossier "assets"
+import Logo from "../assets/logo-desktop.svg";
 
 function Header() {
   return (

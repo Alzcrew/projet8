@@ -1,11 +1,17 @@
+// Home.jsx
 import React from "react";
+import bannerImage from "../assets/img_banner.png"; // Assurez-vous du chemin correct
+import "../styles/layouts/_Banner.scss"; // Assurez-vous du chemin correct
+import Cards from "../components/Cards";
 
 function Home() {
   return (
-    <div>
-      <h1>Welcome to Our Website!</h1>
-      <p>This is the home page of our application.</p>
-      <p>Feel free to explore and discover our content.</p>
+    <div className="container">
+      <div className="banner">
+        <img src={bannerImage} alt="Banner" className="banner-image" />
+        <h2 className="banner-title">Chez vous, partout et ailleurs</h2>
+      </div>
+      <Cards />
     </div>
   );
 }
