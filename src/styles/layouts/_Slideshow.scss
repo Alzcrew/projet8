@@ -1,0 +1,44 @@
+/* _Slideshow.scss */
+
+.slideshow {
+    position: relative;
+  }
+
+  .slideshow img {
+  border-radius: 25px;
+  object-fit: cover;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+    margin-left: 20px;
+  }
+  
+  .next {
+    right: 0;
+    margin-right: 20px;
+  }
+  
+  .slide-counter {
+    position: absolute;
+    bottom: 25px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; 
+    font-size: 18px; 
+  }
+
+  @media (max-width: 768px) {
+  .slide-counter {
+  visibility: hidden;
+  }
+  }

@@ -7,9 +7,9 @@
     border-radius: 25px;
 }
 
-.card {
+.card-link {
     width: 30%;
-    height: 340px; /* Pour 3 cartes par ligne avec un espace de 20px entre elles */
+    height: 340px; 
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -39,4 +39,11 @@
     margin: 10px;
 }
 
-/* Autres styles pour les autres éléments de la carte... */
+@media (max-width: 768px) {
+.card-link {
+width: 100%;
+}
+.cards-container {
+padding: 0;
+}
+}

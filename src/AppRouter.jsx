@@ -16,6 +16,7 @@ export default function AppRouter() {
         <Route path="/a-propos" element={<About />} />
         <Route path="/fiche-logement/:id" element={<Logements />} />
         <Route path="*" element={<Error />} />
+        <Route path="/erreur" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

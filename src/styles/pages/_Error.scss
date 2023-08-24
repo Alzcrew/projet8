@@ -1,0 +1,40 @@
+.not-found-container {
+    text-align: center;
+  }
+  
+  .not-found {
+    font-size: 288px;
+    color: #FF6060;
+    font-weight: 700;
+  }
+  
+  .not-found-container p {
+    font-size: 36px;
+    margin-top: 50px;
+    color:#FF6060 ;
+    font-weight: 500;
+  }
+  
+  .back-to-home {
+    display: inline-block;
+    margin-top: 103px;
+    margin-bottom: 139px;
+    color: #FF6060;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .not-found {
+      font-size: 96px;
+    }
+    .not-found-container p {
+      font-size: 18px;
+      margin-top: 113px;
+    }
+
+    .back-to-home {
+    font-size: 14px;
+    }
+  }
+  
