@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../styles/layouts/_Banner.scss";
-import bannerImage from "../assets/img_banner_about.png";
-import "../styles/pages/_About.scss";
-import fleche from "../assets/Fleche.svg";
+import "../../styles/layouts/_Banner.scss";
+import bannerImage from "../../assets/img_banner_about.png";
+import "./_About.scss";
+import fleche from "../../assets/Fleche.svg";
 
 function About() {
   const [collapses, setCollapses] = useState([

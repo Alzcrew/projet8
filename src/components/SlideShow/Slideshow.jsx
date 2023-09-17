@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../styles/layouts/_Slideshow.scss"; // Importez ou créez le fichier de styles
-import flecheGauche from "../assets/Fleche_gauche_carrou.svg";
-import flecheDroite from "../assets/Fleche_droite_carrou.svg";
+import "./_Slideshow.scss"; 
+import flecheGauche from "../../assets/Fleche_gauche_carrou.svg";
+import flecheDroite from "../../assets/Fleche_droite_carrou.svg";
 
 function Slideshow({ images }) {
   const [currentSlide, setCurrentSlide] = useState(0);

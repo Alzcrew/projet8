@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../styles/layouts/_Cards.scss';
-import data from './data.json';
+import './_Cards.scss';
+import data from '../data.json';
 import { Link } from 'react-router-dom';
 
 class Cards extends Component {

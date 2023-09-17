@@ -1,8 +1,8 @@
 // Home.jsx
 import React from "react";
-import bannerImage from "../assets/img_banner.png"; 
-import "../styles/layouts/_Banner.scss"; 
-import Cards from "../components/Cards";
+import bannerImage from "../../assets/img_banner.png"; 
+import "../../styles/layouts/_Banner.scss"; 
+import Cards from "../../components/Cards/Cards";
 
 
 function Home() {

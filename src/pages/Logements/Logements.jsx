@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Slideshow from '../components/Slideshow';
+import Slideshow from '../../components/SlideShow/Slideshow';
 import { useParams , Navigate } from 'react-router-dom';
-import data from '../components/data.json';
-import fleche from "../assets/Fleche.svg";
+import data from '../../components/data.json';
+import fleche from "../../assets/Fleche.svg";
 
 function generateStars(rating) {
     const stars = [];

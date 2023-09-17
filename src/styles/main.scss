@@ -6,14 +6,14 @@
 
 // Layout styles
 @import './layouts/layout';
-@import './layouts/Cards';
-@import './layouts/Footer';
-@import './layouts/Header';
+@import '../components/Cards/Cards';
+@import '../components/Footer/Footer';
+@import '../components/Header/Header';
 @import './layouts/Banner';
-@import './layouts/Slideshow';
+@import '../components/SlideShow/Slideshow';
 
 // Page styles
-@import './pages/About';
-@import './pages/Error';
-@import './pages/Home';
-@import './pages/Logements';
+@import '../pages/About/About';
+@import '../pages/Error/Error';
+@import '../pages/Home/Home';
+@import '../pages/Logements/Logements';

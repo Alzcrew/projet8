@@ -1,11 +1,12 @@
 import React from "react";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Logements from "./pages/Logements";
-import Error from "./pages/Error";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Logements from "./pages/Logements/Logements";
+import Error from "./pages/Error/Error";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import "./styles/main.scss";
 
 export default function AppRouter() {
   return (
