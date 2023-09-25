@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../styles/layouts/_Banner.scss";
 import bannerImage from "../../assets/img_banner_about.png";
 import "./_About.scss";
-import fleche from "../../assets/Fleche.svg";
+import Collapses from "../../components/Collapses/Collapses";
 
 function About() {
   const [collapses, setCollapses] = useState([
@@ -50,24 +50,16 @@ function About() {
       </div>
       <div className="collapse-container">
         {collapses.map((collapse, index) => (
-          <div key={index} className={`collapse ${collapse.isOpen ? "active" : ""}`}>
-            <button
-              className={`collapse-label ${collapse.isOpen ? "active" : ""}`}
-              onClick={() => toggleCollapse(index)}
-            >
-              {collapse.title}{" "}
-              <img
-                src={fleche}
-                alt="Flèche"
-                className={`collapse-arrow ${
-                  collapse.isOpen ? "active" : ""
-                }`}
-              />
-            </button>
-            <div className={`collapse-content ${collapse.isOpen ? "active" : ""}`}>
-              {collapse.content}
-            </div>
-          </div>
+          <Collapses 
+          key={index} 
+          title={collapse.title} 
+          isOpen={collapse.isOpen} 
+          toggleCollapse={() => toggleCollapse(index)}
+          fullWidth={true}
+        >
+          {collapse.content}
+        </Collapses>
+        
         ))}
       </div>
     </div>

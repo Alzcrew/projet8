@@ -1,0 +1,15 @@
+.logement-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.tag-bubble {
+    background-color: #FF6060;
+    color: white;
+    padding: 3px 30px;
+    border-radius: 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}

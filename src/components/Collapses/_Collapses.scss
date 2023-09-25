@@ -1,0 +1,75 @@
+.logement-collapses {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.full-width-collapse {
+  width: 100%;
+}
+
+.logement-collapse {
+  width: 45%;
+}
+
+.collapse-container {
+  padding: 0px 50px 50px 50px;
+}
+
+
+
+.collapse-label {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff6060;
+  margin-top: 30px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.collapse-label.active {
+  background-color: #ff6060;
+}
+
+.collapse-label.active .collapse-arrow {
+  transform: rotate(180deg);
+}
+
+.collapse-arrow {
+  width: 16px;
+  height: 16px;
+  float: right;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.collapse-content {
+  background-color: #F6F6F6;
+  color: #FF6060;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out, padding 0.2s ease-out;  /* Ajout de la transition pour le padding */
+  padding: 0 15px;  /* Padding initial */
+}
+
+.collapse-content.active {
+  max-height: 500px;  /* Hauteur maximale lorsque le contenu est ouvert */
+  padding: 15px;  /* Padding lorsque le contenu est ouvert */
+}
+
+@media (max-width: 768px) {
+  .collapse-container {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .collapse {
+    width: 100%;
+  }
+  .logement-collapses {
+    display: block;
+  }
+}

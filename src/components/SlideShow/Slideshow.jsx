@@ -24,7 +24,7 @@ function Slideshow({ images }) {
       <img
         src={images[currentSlide]}
         alt={`Slide ${currentSlide + 1}`}
-        style={{ width: "100%", height: "415px" }}
+        className="slide-image"
       />
       <button className="nav-button next" onClick={goToNextSlide}>
         <img src={flecheDroite} alt="Suivant" />
