@@ -51,7 +51,7 @@ function Logements() {
           ))}
         </Tags>
         <div className="logement-rating">
-          <Stars rating={accommodation.rating} />
+        <Stars rating={Number(accommodation.rating)} />
         </div>
       </div>
       <div className="logement-collapses">
