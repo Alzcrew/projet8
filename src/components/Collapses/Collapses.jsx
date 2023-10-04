@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import fleche from '../../assets/Fleche.svg';  // Assure-toi que le chemin est correct
+import fleche from '../../assets/Fleche.svg';
 
 export default function Collapses({ title, children, isOpen, toggleCollapse, fullWidth }) {
-  const [padding, setPadding] = useState('0px');  // Ajout de l'état pour le padding
+  const [padding, setPadding] = useState('0px');  
   const collapseClass = fullWidth ? 'full-width-collapse' : 'logement-collapse';
 
   // Mettre à jour le padding lors du clic
@@ -16,7 +16,7 @@ export default function Collapses({ title, children, isOpen, toggleCollapse, ful
     <div className={`collapse ${isOpen ? "active" : ""} ${collapseClass}`}>
       <button
         className={`collapse-label ${isOpen ? "active" : ""}`}
-        onClick={handleToggle}  // Utilisation de handleToggle
+        onClick={handleToggle} 
       >
         {title}
         <img
