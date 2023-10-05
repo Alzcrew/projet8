@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Slideshow from '../../components/SlideShow/Slideshow';
-import { useParams, Navigate } from 'react-router-dom';
-import data from '../../components/data.json';
+import { Navigate , useLocation } from 'react-router-dom';
 import Tags from '../../components/Tags/Tags';
 import Stars from '../../components/Stars/Stars';
 import Collapses from '../../components/Collapses/Collapses';
 
 function Logements() {
-  const { id } = useParams();
-  const accommodation = data.find((item) => item.id === id) || {};
+  const location = useLocation();
+  const accommodation = location.state.accommodation;
+
 
   // Ajout des états pour gérer les collapses
   const [descriptionOpen, setDescriptionOpen] = useState(false);
@@ -23,9 +23,10 @@ function Logements() {
     setEquipmentsOpen(!equipmentsOpen);
   };
 
-  if (Object.keys(accommodation).length === 0) {
+  if (!accommodation) {
     return <Navigate to="/erreur" />;
   }
+  
 
   return (
     <div className="container">

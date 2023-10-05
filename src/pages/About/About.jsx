@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "../../styles/layouts/_Banner.scss";
 import bannerImage from "../../assets/img_banner_about.png";
-import "./_About.scss";
 import Collapses from "../../components/Collapses/Collapses";
+import Banner from '../../components/Banner/Banner';
 
 function About() {
   const [collapses, setCollapses] = useState([
@@ -45,9 +44,7 @@ function About() {
 
   return (
     <div className="container">
-      <div className="banner">
-        <img src={bannerImage} alt="Banner" className="banner-image" />
-      </div>
+      <Banner image={bannerImage} />
       <div className="collapse-container">
         {collapses.map((collapse, index) => (
           <Collapses 

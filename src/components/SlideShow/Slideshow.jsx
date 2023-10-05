@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./_Slideshow.scss"; 
 import flecheGauche from "../../assets/Fleche_gauche_carrou.svg";
 import flecheDroite from "../../assets/Fleche_droite_carrou.svg";
 

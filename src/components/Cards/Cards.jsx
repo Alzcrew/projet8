@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './_Cards.scss';
 import data from '../data.json';
 import { Link } from 'react-router-dom';
 
@@ -9,9 +8,9 @@ class Cards extends Component {
             <div className="cards-container">
                 {data.map((location, index) => (
                     <Link to={{
-                            pathname: `/fiche-logement/${location.id}`,
-                            state: { accommodation: location } 
+                            pathname: `/fiche-logement/${location.id}`, 
                           }}
+                          state= {{accommodation: location}}
                           key={index}
                           className="card-link">
                         <div className="card">
