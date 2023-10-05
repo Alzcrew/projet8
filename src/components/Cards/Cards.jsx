@@ -7,6 +7,7 @@ class Cards extends Component {
         return (
             <div className="cards-container">
                 {data.map((location, index) => (
+                // Utilisation de Link pour la navigation + passage du state "accommodation"
                     <Link to={{
                             pathname: `/fiche-logement/${location.id}`, 
                           }}

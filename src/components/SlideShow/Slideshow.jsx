@@ -3,12 +3,16 @@ import flecheGauche from "../../assets/Fleche_gauche_carrou.svg";
 import flecheDroite from "../../assets/Fleche_droite_carrou.svg";
 
 function Slideshow({ images }) {
+  // État pour suivre le slide actuel
   const [currentSlide, setCurrentSlide] = useState(0);
 
+
+// Fonction pour aller au slide suivant
   const goToNextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
   };
 
+  // Fonction pour aller au slide précédent
   const goToPrevSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? images.length - 1 : prevSlide - 1

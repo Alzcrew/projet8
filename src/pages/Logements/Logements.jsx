@@ -6,15 +6,15 @@ import Stars from '../../components/Stars/Stars';
 import Collapses from '../../components/Collapses/Collapses';
 
 function Logements() {
+  // Utilisation de useLocation pour récupérer le state passé à cette route
   const location = useLocation();
   const accommodation = location.state.accommodation;
 
-
-  // Ajout des états pour gérer les collapses
+  // États pour gérer l'ouverture/fermeture des collapses
   const [descriptionOpen, setDescriptionOpen] = useState(false);
   const [equipmentsOpen, setEquipmentsOpen] = useState(false);
 
-  // Fonctions pour basculer les états des collapses
+  // Fonctions pour basculer l'état des collapses
   const toggleDescription = () => {
     setDescriptionOpen(!descriptionOpen);
   };
@@ -23,9 +23,11 @@ function Logements() {
     setEquipmentsOpen(!equipmentsOpen);
   };
 
+  // Redirection si accommodation est undefined
   if (!accommodation) {
     return <Navigate to="/erreur" />;
   }
+
   
 
   return (
