@@ -10,7 +10,7 @@ import "./styles/main.scss";
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/projet8">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,3 +23,4 @@ export default function AppRouter() {
     </BrowserRouter>
   );
 }
+
